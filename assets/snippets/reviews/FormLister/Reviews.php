@@ -38,7 +38,11 @@ class Reviews extends Form
             $this->reviews->create($this->getFormData('fields'));
             $this->reviews->set('active', (int)!$this->getCFGDef('moderation', 1));
             if ($this->reviews->save()) {
-                $doc = new \modResource($this->modx);
+                if (class_exists('\Pathologic\EvolutionCMS\MODxAPI\modResource')) {
+                    $doc = new \Pathologic\EvolutionCMS\MODxAPI\modResource($this->modx);
+                } else {
+                    $doc = new \modResource($this->modx);
+                } 
                 $this->setFields($doc->edit($this->getField('rid'))->toArray(), 'page');
                 parent::process();
             } else {
