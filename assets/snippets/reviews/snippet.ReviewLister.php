@@ -51,7 +51,6 @@ if (!class_exists("ReviewLister", false)) {
 $doc = (int)($params['id'] ?? $modx->documentIdentifier);
 $q = $modx->db->query("SELECT * FROM {$modx->getFullTableName('reviews_rating')} WHERE `rid` = {$doc}");
 $row = $modx->db->getRow($q);
-var_dump($row);
 if ($row) {
     $modx->setPlaceholder('reviews.total', (int) $row['total']);
     $modx->setPlaceholder('reviews.rating', number_format($row['rating'], 2, '.', ''));
