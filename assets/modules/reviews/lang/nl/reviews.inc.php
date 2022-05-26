@@ -1,22 +1,22 @@
 <?php
 return [
     'module.title'   => 'Reviews',
-    'module.close'   => 'Close module',
-    'pagetitle'      => 'Pagetitle',
+    'module.close'   => 'Sluit module',
+    'pagetitle'      => 'Titel',
     'review'         => 'Review',
-    'name'           => 'Author',
-    'createdon'      => 'Created on',
-    'delete'         => 'Delete',
-    'sure_to_delete' => 'Are you sure to delete?',
-    'edit'           => 'Edit review',
-    'image'          => 'Image',
-    'save'           => 'Save',
-    'error'          => 'Error',
-    'close'          => 'Close',
-    'save_failed'    => 'Failed to save',
-    'response_error' => 'Failed to process server response',
-    'server_error'   => 'Server error: ',
-    'publish'        => 'Publish',
-    'rate'           => 'Rate'
+    'name'           => 'Schrijver',
+    'createdon'      => 'Aanmaakdatum',
+    'delete'         => 'Verwijder',
+    'sure_to_delete' => 'Weet je zeker dat je dit wilt verwijderen?',
+    'edit'           => 'Review aanpassen',
+    'image'          => 'Afbeelding',
+    'save'           => 'Opslaan',
+    'error'          => 'Fout',
+    'close'          => 'Sluit',
+    'save_failed'    => 'Opslaan mislukt',
+    'response_error' => 'Kan server respons niet verwerken',
+    'server_error'   => 'Server fout: ',
+    'publish'        => 'Publiseer',
+    'rate'           => 'Score'
 ];
 
