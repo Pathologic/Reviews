@@ -1,13 +1,13 @@
 <?php
 return [
-    'error.name.required'   => 'Enter your name',
-    'error.email.required'  => 'Enter your e-mail',
-    'error.email.email'     => 'Enter your correct e-mail',
-    'error.review.required' => 'Enter your review',
-    'error.rate.required'   => 'Select your rate',
-    'error.rate.numeric'    => 'Select your rate',
-    'error.rate.between'    => 'Select your rate',
+    'error.name.required'   => 'Vul uw naam in',
+    'error.email.required'  => 'Vul uw emailadres in',
+    'error.email.email'     => 'Vul een geldig emailadres in',
+    'error.review.required' => 'Vul uw review in',
+    'error.rate.required'   => 'Selecteer aantal sterren',
+    'error.rate.numeric'    => 'Selecteer aantal sterren',
+    'error.rate.between'    => 'Selecteer aantal sterrene',
     'error.rid.required'    => '',
     'error.rid.numeric'     => '',
-    'form.error'            => 'Failed to save review'
+    'form.error'            => 'Kan uw review niet opslaan'
 ];
