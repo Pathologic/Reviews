@@ -25,7 +25,9 @@ $('.form-wrapper').on('submit', 'form', function(e){
     var submitBtn = $('[type="submit"]', form);
     submitBtn.prop('disabled', true);
     var data = form.serialize();
-    Noty.closeAll();
+    if (typeof Noty === 'function') {
+        Noty.closeAll();
+    }
     $.post('/assets/snippets/reviews/ajax.php',
         data,
         function (response) {
