@@ -23,7 +23,7 @@ $params['prepare'] = trim(implode(",", $prepare), ',');
 if (!class_exists("ReviewLister", false)) {
     class ReviewLister
     {
-        public static function prepare(array $data = [], DocumentParser $modx, $_DL, prepare_DL_Extender $_extDocLister)
+        public static function prepare(array $data, DocumentParser $modx, $_DL, prepare_DL_Extender $_extDocLister)
         {
             $data['rate'] = $data['rating'] = (int) $data['rate'];
             $data['relrating'] = number_format($data['rate'] / 5 * 100, 2, '.', '');
